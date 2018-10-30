@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BGB_Dice_Checker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkMyDice" translatesAutoresizingMaskIntoConstraints="NO" id="dQ1-Ac-ILg">
+                                <rect key="frame" x="85" y="44" width="205" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="PzY-LZ-6O4"/>
+                                    <constraint firstAttribute="width" constant="205" id="SAn-Vf-INf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gw6-U5-Kdu">
+                                <rect key="frame" x="265" y="48" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="IZ0-1o-f8H"/>
+                                    <constraint firstAttribute="width" secondItem="gw6-U5-Kdu" secondAttribute="height" multiplier="1:1" id="Pyc-bH-OVS"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zql-Uo-du7" userLabel="seed textfield">
+                                <rect key="frame" x="79.666666666666657" y="148.33333333333334" width="275.33333333333337" height="30"/>
+                                <color key="backgroundColor" red="0.042615301907062531" green="0.207264244556427" blue="0.35886037349700928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qa-pJ-vYb">
+                                <rect key="frame" x="3.9999999999999964" y="148" width="60.666666666666657" height="30.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="0.99870043992996216" green="0.93054932355880737" blue="0.19664424657821655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tul-mQ-KQY" userLabel="DownloadBGBButton">
+                                <rect key="frame" x="265" y="48" width="50" height="50"/>
+                                <state key="normal" image="checkIcon"/>
+                                <connections>
+                                    <action selector="BGBDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fXi-iI-gSK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gre-Z4-Q7I">
+                                <rect key="frame" x="4" y="182.33333333333331" width="367" height="591.66666666666674"/>
+                                <string key="text">Enter a seed to generate the first 1000 numbers using the Mersenne Twister random number generator. If you are checking your backgammon rolls from a match using BG Buddy, export your match dice rolls from the BG Buddy Saved Matches folder. Find the seed in the exported email and enter it here. Compare the rolls generated here to the dice text file attachment in the email. Tap the BGB icon above to download BG Buddy.</string>
+                                <color key="textColor" red="0.99870043990000001" green="0.93054932359999998" blue="0.19664424659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031372549019607843" green="0.20784313725490194" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zql-Uo-du7" firstAttribute="leading" secondItem="9Qa-pJ-vYb" secondAttribute="trailing" constant="15" id="0t2-sf-aen"/>
+                            <constraint firstItem="gw6-U5-Kdu" firstAttribute="centerY" secondItem="Tul-mQ-KQY" secondAttribute="centerY" id="2QR-xz-Pny"/>
+                            <constraint firstItem="dQ1-Ac-ILg" firstAttribute="centerX" secondItem="RIh-Li-xaX" secondAttribute="centerX" id="92N-xG-qhf"/>
+                            <constraint firstItem="RIh-Li-xaX" firstAttribute="bottom" secondItem="gre-Z4-Q7I" secondAttribute="bottom" constant="4" id="DlM-gw-JLn"/>
+                            <constraint firstItem="9Qa-pJ-vYb" firstAttribute="top" secondItem="dQ1-Ac-ILg" secondAttribute="bottom" constant="4" id="IOe-80-4T4"/>
+                            <constraint firstItem="gw6-U5-Kdu" firstAttribute="width" secondItem="Tul-mQ-KQY" secondAttribute="width" id="KjV-qx-ZY2"/>
+                            <constraint firstItem="gw6-U5-Kdu" firstAttribute="height" secondItem="Tul-mQ-KQY" secondAttribute="height" id="L9G-yf-9sI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zql-Uo-du7" secondAttribute="trailing" constant="4" id="Q4D-Lu-QCW"/>
+                            <constraint firstItem="dQ1-Ac-ILg" firstAttribute="top" secondItem="gw6-U5-Kdu" secondAttribute="top" constant="-4" id="QjZ-md-Yz9"/>
+                            <constraint firstItem="gre-Z4-Q7I" firstAttribute="top" secondItem="Zql-Uo-du7" secondAttribute="bottom" constant="4" id="SCH-gI-I8v"/>
+                            <constraint firstItem="gw6-U5-Kdu" firstAttribute="centerX" secondItem="dQ1-Ac-ILg" secondAttribute="trailing" id="WI2-Xw-oBH"/>
+                            <constraint firstItem="dQ1-Ac-ILg" firstAttribute="top" secondItem="RIh-Li-xaX" secondAttribute="top" id="dBj-EV-Sn6"/>
+                            <constraint firstItem="9Qa-pJ-vYb" firstAttribute="centerY" secondItem="Zql-Uo-du7" secondAttribute="centerY" id="dHs-07-XaR"/>
+                            <constraint firstItem="gre-Z4-Q7I" firstAttribute="leading" secondItem="9Qa-pJ-vYb" secondAttribute="leading" id="mCq-iJ-inz"/>
+                            <constraint firstItem="gw6-U5-Kdu" firstAttribute="centerX" secondItem="Tul-mQ-KQY" secondAttribute="centerX" id="okX-NC-99D"/>
+                            <constraint firstItem="9Qa-pJ-vYb" firstAttribute="leading" secondItem="RIh-Li-xaX" secondAttribute="leading" constant="4" id="qHz-CY-nnR"/>
+                            <constraint firstItem="RIh-Li-xaX" firstAttribute="trailing" secondItem="gre-Z4-Q7I" secondAttribute="trailing" constant="4" id="vQ0-Ac-5mr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RIh-Li-xaX"/>
+                    </view>
+                    <connections>
+                        <outlet property="numbersView" destination="gre-Z4-Q7I" id="dZc-9P-6In"/>
+                        <outlet property="seed" destination="Zql-Uo-du7" id="DwK-Q5-vkE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88" y="-210"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkIcon" width="400" height="400"/>
+        <image name="checkMyDice" width="823" height="401"/>
+    </resources>
+</document>
