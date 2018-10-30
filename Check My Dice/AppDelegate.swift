@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  BGB Dice Checker
+//  Check My Dice
 //
 //  Created by James Knipe on 20/05/2017.
 //  Copyright © 2017 James Knipe. All rights reserved.
