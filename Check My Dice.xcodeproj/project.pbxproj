@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		825375691ED85B8F009382CF /* launchImageCenter2.png in Resources */ = {isa = PBXBuildFile; fileRef = 825375681ED85B8F009382CF /* launchImageCenter2.png */; };
-		8271244C1ED1A3C400412672 /* BGBDiceChecker1.3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271244B1ED1A3C400412672 /* BGBDiceChecker1.3.swift */; };
 		82E402CE1ED30DA800FC79CA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E402CD1ED30DA800FC79CA /* Launch Screen.storyboard */; };
 		82E8C9411ED04BA700F82480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8C9401ED04BA700F82480 /* AppDelegate.swift */; };
 		82E8C9431ED04BA700F82480 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E8C9421ED04BA700F82480 /* ViewController.swift */; };
@@ -18,7 +17,6 @@
 
 /* Begin PBXFileReference section */
 		825375681ED85B8F009382CF /* launchImageCenter2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImageCenter2.png; sourceTree = "<group>"; };
-		8271244B1ED1A3C400412672 /* BGBDiceChecker1.3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGBDiceChecker1.3.swift; sourceTree = "<group>"; };
 		82E402CD1ED30DA800FC79CA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		82E8C93D1ED04BA700F82480 /* Check My Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Check My Dice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E8C9401ED04BA700F82480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				82E8C9401ED04BA700F82480 /* AppDelegate.swift */,
-				8271244B1ED1A3C400412672 /* BGBDiceChecker1.3.swift */,
 				82E8C9421ED04BA700F82480 /* ViewController.swift */,
 				82E8C9441ED04BA700F82480 /* Main.storyboard */,
 				82E8C94A1ED04BA700F82480 /* Assets.xcassets */,
@@ -146,7 +143,6 @@
 			files = (
 				82E8C9431ED04BA700F82480 /* ViewController.swift in Sources */,
 				82E8C9411ED04BA700F82480 /* AppDelegate.swift in Sources */,
-				8271244C1ED1A3C400412672 /* BGBDiceChecker1.3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
